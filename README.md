@@ -55,9 +55,10 @@ pip install -r requirements.txt
 import dagshub
 dagshub.init(repo_owner='adam.vamshikrishna', repo_name='MLflow', mlflow=True)
 
+```bash
 Run this to export as env variables:
 
-```bash
+
 
 import mlflow
 with mlflow.start_run():
@@ -66,7 +67,13 @@ with mlflow.start_run():
 
 ```
 
+```bash
+### DVC cmd
 
+1.dvc init
+2.dvc repro
+3. dvc dag
+```
 
 ```bash
 # Finally run the following command
