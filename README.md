@@ -38,6 +38,36 @@ conda activate cnncls
 pip install -r requirements.txt
 ```
 
+
+
+## MLflow
+
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+import dagshub
+dagshub.init(repo_owner='adam.vamshikrishna', repo_name='MLflow', mlflow=True)
+
+Run this to export as env variables:
+
+```bash
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+
+```
+
+
+
 ```bash
 # Finally run the following command
 python app.py

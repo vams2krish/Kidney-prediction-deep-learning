@@ -5,6 +5,7 @@ import tensorflow as tf
 import time
 from pathlib import Path
 from cnnClassifer.entity.config_entity import TrainingConfig
+from typing import Dict, Any, Tuple
 
 
 
@@ -19,13 +20,12 @@ class Training:
         )
 
     def train_valid_generator(self):
-
-        datagenerator_kwargs = dict(
-            rescale = 1./255,
-            validation_split=0.20
+        datagenerator_kwargs: Dict[str, Any] = dict(
+            rescale=1./255,          # float
+            validation_split=0.30    # float
         )
 
-        dataflow_kwargs = dict(
+        dataflow_kwargs: Dict[str, Any]  = dict(
             target_size=self.config.params_image_size[:-1],
             batch_size=self.config.params_batch_size,
             interpolation="bilinear"
