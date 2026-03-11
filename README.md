@@ -780,7 +780,7 @@ SOFTWARE.
 | 👤 **Author** |Adam, Vamshi Krishna |
 | 📧 **Email** | adam.vamshikrishna@gmail.com |
 | 🔗 **GitHub** | [vams2krish](https://github.com/vams2krish) |
-| 💼 **LinkedIn** | [Adam, Vamshi Krishna](https://linkedin.com/in/adam.vamshikrishna) |
+| 💼 **LinkedIn** | [Adam, Vamshi Krishna](https://linkedin.com/in/adamvamshikrishna) |
 
 ---
 
