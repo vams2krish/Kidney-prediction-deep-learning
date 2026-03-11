@@ -777,10 +777,10 @@ SOFTWARE.
 
 | Contact | Details |
 |---------|---------|
-| 👤 **Author** | Vamsi Krishna |
+| 👤 **Author** |Adam, Vamshi Krishna |
 | 📧 **Email** | adam.vamshikrishna@gmail.com |
 | 🔗 **GitHub** | [vams2krish](https://github.com/vams2krish) |
-| 💼 **LinkedIn** | [Vamsi Krishna](https://linkedin.com/in/vamsikrishna) |
+| 💼 **LinkedIn** | [Adam, Vamshi Krishna](https://linkedin.com/in/adam.vamshikrishna) |
 
 ---
 
@@ -792,11 +792,11 @@ If you found this project helpful, please give it a ⭐ on GitHub!
 
 ---
 
-**Made with ❤️ by [Vamsi Krishna](https://github.com/vams2krish)**
+**Made with ❤️ by [Adam Vamshi Krishna](https://github.com/vams2krish)**
 
 [![GitHub stars](https://img.shields.io/github/stars/vams2krish/Kidney-Disease-Classification-MLflow-DVC?style=social)](https://github.com/vams2krish/Kidney-Disease-Classification-MLflow-DVC/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/vams2krish/Kidney-Disease-Classification-MLflow-DVC?style=social)](https://github.com/vams2krish/Kidney-Disease-Classification-MLflow-DVC/network)
-[![X Follow](https://img.shields.io/X/follow/VamsKrish_?style=social)](https://X.com/vamskrish_)
+[![Twitter Follow](https://img.shields.io/twitter/follow/VamsKrish_?style=social)](https://twitter.com/vamskrish_)
 
 </div>
 
