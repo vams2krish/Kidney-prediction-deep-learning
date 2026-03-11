@@ -1,6 +1,7 @@
 import os
 import zipfile
 import gdown
+from pathlib import Path
 from cnnClassifer import logger
 from cnnClassifer.utils.Common import get_size
 from cnnClassifer.entity.config_entity import (DataIngestionConfig)
@@ -26,8 +27,10 @@ class DataIngestion:
             gdown.download(prefix+file_id,zip_download_dir)
 
             logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
+            logger.info(f"Downloaded file size: {get_size(Path(zip_download_dir))}")
 
         except Exception as e:
+            logger.error(f"Error downloading data: {str(e)}")
             raise e
         
     
@@ -42,3 +45,24 @@ class DataIngestion:
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+
+
+    def initiate_data_ingestion(self):
+        """
+        Main method to orchestrate data ingestion
+        Downloads the file and extracts the zip file
+        """
+        logger.info("Starting data ingestion process")
+        
+        try:
+            self.download_file()
+            logger.info("Download completed successfully")
+            
+            self.extract_zip_file()
+            logger.info("Extraction completed successfully")
+            
+            logger.info("Data ingestion completed successfully")
+            
+        except Exception as e:
+            logger.error(f"Error during data ingestion: {str(e)}")
+            raise e
